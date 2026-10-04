@@ -1,1 +1,12 @@
-
+summa = int(input("Введите сумму: "))
+print("5000 руб:", summa // 5000)
+summa = summa % 5000
+print("2000 руб:", summa // 2000)
+summa = summa % 2000
+print("1000 руб:", summa // 1000)
+summa = summa % 1000
+print("500 руб:", summa // 500)
+summa = summa % 500
+print("200 руб:", summa // 200)
+summa = summa % 200
+print("100 руб:", summa // 100)
