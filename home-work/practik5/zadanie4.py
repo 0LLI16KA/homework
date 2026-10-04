@@ -1,11 +1,13 @@
 import math
 
-# Прямоугольник
+def calculate_rectangle_area(width, height):
+    return width * height
+def calculate_circle_area(radius):
+    return math.pi * radius * radius
 print("Прямоугольник:")
-width = float(input("Ширина: "))
-height = float(input("Высота: "))
-print("Площадь:", width * height)
-# Круг
+w = float(input("Ширина: "))
+h = float(input("Высота: "))
+print(f"Площадь: {calculate_rectangle_area(w, h):.2f}")
 print("Круг:")
-radius = float(input("Радиус: "))
-print("Площадь:", math.pi * radius * radius)
+r = float(input("Радиус: "))
+print(f"Площадь: {calculate_circle_area(r):.2f}")
